@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <img src="pics/f1-background.jpg" alt="background" class="background">
+    <img src="pics/ferrari-wallpaper.jpg" alt="background" class="background">
     <div class="content">
         <div class="top-text">Sign up for our F1 newsletter now to keep yourself updated with the latest news and
             drama!<br>
@@ -17,28 +17,40 @@
         </div>
         <div class="form">
             <form action="#" method="post">
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" id="first-name" name="first-name">
+                <div>
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" name="first-name">
+                </div>
 
-                <label for="last-name">LAST NAME</label>
-                <input type="text" id="last-name" name="last-name">
+                <div>
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" name="last-name">
+                </div>
+                <br>
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email">
+                </div>
 
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email">
+                <div>
+                    <label for="phone-number">PHONE</label>
+                    <input type="number" name="phone-number" id="phone-number">
+                </div>
+                <br>
+                <div>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password">
+                </div>
 
-                <label for="phone-number">PHONE</label>
-                <input type="number" name="phone-number" id="phone-number">
-
-                <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password">
-
-                <label for="confirm-password">CONFIRM PASSWORD</label>
-                <input type="password" name="confirm-password" id="confirm-password">
+                <div>
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirm-password" id="confirm-password">
+                </div>
 
             </form>
         </div>
-        <button class="submit">Create Account</button>
-        <div class="login">Already have an account?</div>
+        <button type="submit" class="button"><span>Create Account </span></button>
+        <div class="login">Already have an account?<a href="#">Log in</a></div>
     </div>
 
 </body>
