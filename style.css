@@ -1,11 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap');
 
+* {
+    /* border: 2px solid red; */
+    font-size: 100%;
+    box-sizing: border-box;
+
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     min-height: 100vh;
     display: flex;
+}
 
+/* .left {
+    display: flex;
+
+} */
+
+.overlay {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    top: 500px;
+    left: 0;
+    right: 0;
+    bottom: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay-pic {
+    width: 8rem;
+    height: 6rem;
+    padding: 0 auto;
+    margin: 0 auto;
+    
 }
 
 .background {
@@ -18,7 +48,7 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 2em;
     padding: 2em;
     background-color: #E5E7EB;
 }
@@ -27,23 +57,35 @@ body {
     text-align: center;
     font-size: 20px;
     font-weight: 500;
-
+    margin-top: 20px;
+    justify-content: center;
 }
 
 .form {
     background-color: white;
     font-family: inherit;
     height: auto;
-    width: 100%;
+    width: auto;
     border-radius: 10px;
-    padding: 1em;
-    margin: 1em 0;
+    padding: 1em 2em;
     box-sizing: border-box;
     flex-wrap: wrap;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+legend {
+    text-align: left;
+    padding: 1em 0;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 label {
-    color: darkgrey;
+    color: #333;
+    text-align: left;
+    font-size: 12px;
 }
 
 button,
@@ -52,15 +94,16 @@ input {
     font-size: 100%;
     box-sizing: border-box;
     width: 200px;
-    margin: 20px;
 }
 
 
 input {
     border-radius: 8px;
-    border: 2px solid #aea6a6;
+    border: 2px solid #ded1d1;
     padding: 10px;
     box-shadow: inset 1px 1px 3px #ccc;
+    width: 300px;
+    margin-bottom: 20px;
 }
 
 input,
@@ -74,11 +117,10 @@ input:focus {
 
 button {
     padding: 20px;
-    margin: 10px auto;
+    margin: 0 auto;
     font: bold 0.6em sans-serif;
     border: 2px solid #333;
     border-radius: 10px;
-    background: none;
     cursor: pointer;
     width: 200px;
     height: auto;
@@ -126,4 +168,8 @@ button:active {
 form div {
     float: left;
     margin-right: 20px;
+}
+
+.login {
+    font-size: 20px;
 }
