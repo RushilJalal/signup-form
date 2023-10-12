@@ -14,10 +14,10 @@ body {
     display: flex;
 }
 
-/* .left {
+.left {
     display: flex;
-
-} */
+    min-width: none;
+}
 
 .overlay {
     position: absolute;
