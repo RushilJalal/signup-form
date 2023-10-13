@@ -35,7 +35,7 @@ body {
     height: 6rem;
     padding: 0 auto;
     margin: 0 auto;
-    
+
 }
 
 .background {
@@ -46,11 +46,14 @@ body {
 
 .content {
     text-align: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
     gap: 2em;
     padding: 2em;
     background-color: #E5E7EB;
+    width: auto;
+    height: auto;
 }
 
 .top-text {
