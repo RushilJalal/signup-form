@@ -101,7 +101,7 @@ input {
 }
 
 
-input {
+form input {
     border-radius: 8px;
     border: 2px solid #ded1d1;
     padding: 10px;
@@ -115,8 +115,16 @@ label {
     display: block;
 }
 
-input:focus {
-    border-color: lightblue;
+/* input:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+    box-shadow: none;
+} */
+
+input.error {
+    border-color: red;
 }
 
 button {
@@ -176,4 +184,9 @@ form div {
 
 .login {
     font-size: 20px;
+}
+
+&:valid {
+    border-style: auto;
+    border-color: inherit;
 }

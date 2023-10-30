@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Sign-up form</title>
 </head>
 
@@ -18,30 +19,31 @@
             You know you want to!
         </div>
         <div class="form">
-            <form action="#" method="post">
+            <form action="#" method="post" id="myForm">
                 <legend>Lets get started</legend>
                 <div>
                     <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="first-name" placeholder="Hugh" required>
+                    <input type="text" id="first-name" name="first-name" placeholder="John" required>
                 </div>
 
                 <div>
                     <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name" name="last-name" placeholder="Jass" required>
+                    <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
                 </div>
                 <br>
                 <div>
                     <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email" placeholder="email@address.com" required>
+                    <input type="email" name="email" id="email" placeholder="name@address.com" required>
                 </div>
 
                 <div>
                     <label for="phone-number">PHONE</label>
-                    <input type="number" name="phone-number" id="phone-number" placeholder="Your phone number" required>
+                    <input type="number" name="phone-number" id="phone-number" placeholder="Your phone number"
+                        pattern="[1-9]{1}[0-9]{9}" max="10" required>
                 </div>
                 <br>
                 <div>
-                    <label for="password">PASSWORD</label>
+                    <label for=" password">PASSWORD</label>
                     <input type="password" name="password" id="password" required>
                 </div>
 
