@@ -1,118 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap");
 
 * {
-    /* border: 2px solid red; */
-    font-size: 100%;
-    box-sizing: border-box;
-
+  /* border: 2px solid red; */
+  font-size: 100%;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
 }
 
 .left {
-    display: flex;
-    min-width: none;
+  display: flex;
+  min-width: none;
 }
 
 .overlay {
-    position: absolute;
-    width: 400px;
-    height: auto;
-    top: 500px;
-    left: 0;
-    right: 0;
-    bottom: 400px;
-    background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 400px;
+  height: auto;
+  top: 500px;
+  left: 0;
+  right: 0;
+  bottom: 400px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .overlay-pic {
-    width: 8rem;
-    height: 6rem;
-    padding: 0 auto;
-    margin: 0 auto;
-
+  width: 8rem;
+  height: 6rem;
+  padding: 0 auto;
+  margin: 0 auto;
 }
 
 .background {
-    display: block;
-    width: 400px;
-    height: auto;
+  display: block;
+  width: 400px;
+  height: auto;
 }
 
 .content {
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    padding: 2em;
-    background-color: #E5E7EB;
-    width: 100%;
-    height: auto;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em;
+  background-color: #e5e7eb;
+  width: 100%;
+  height: auto;
 }
 
 .top-text {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 500;
-    margin-top: 20px;
-    justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+  justify-content: center;
 }
 
 .form {
-    background-color: white;
-    font-family: inherit;
-    height: auto;
-    width: auto;
-    border-radius: 10px;
-    padding: 1em 2em;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: left;
-    align-items: center;
+  background-color: white;
+  font-family: inherit;
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+  padding: 1em 2em;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 legend {
-    text-align: left;
-    padding: 0.8em 0;
-    font-weight: 500;
-    font-size: 1.5em;
+  text-align: left;
+  padding: 0.8em 0;
+  font-weight: 500;
+  font-size: 1.5em;
 }
 
 label {
-    color: #333;
-    text-align: left;
-    font-size: 12px;
-    font-weight: 500;
+  color: #333;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 button,
 input {
-    font-family: inherit;
-    font-size: 100%;
-    box-sizing: border-box;
-    width: 200px;
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  width: 200px;
 }
 
-
 form input {
-    border-radius: 8px;
-    border: 2px solid #ded1d1;
-    padding: 10px;
-    box-shadow: inset 1px 1px 3px #ccc;
-    width: 300px;
-    margin-bottom: 20px;
+  border-radius: 8px;
+  border: 2px solid #ded1d1;
+  padding: 10px;
+  box-shadow: inset 1px 1px 3px #ccc;
+  width: 300px;
+  margin-bottom: 20px;
 }
 
 input,
 label {
-    display: block;
+  display: block;
 }
 
 /* input:invalid {
@@ -124,69 +121,110 @@ input:focus:invalid {
 } */
 
 input.error {
-    border-color: red;
+  border-color: red;
 }
 
 button {
-    padding: 20px;
-    margin: 0 auto;
-    font: bold 0.6em sans-serif;
-    border: 2px solid #333;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 200px;
-    height: auto;
-    background-color: gray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  font: bold 0.6em sans-serif;
+  border: 2px solid #333;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 200px;
+  height: auto;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100%;
 }
 
 button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
 button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
 }
 
 button:hover span {
-    padding-right: 25px;
+  padding-right: 25px;
 }
 
 button:hover span:after {
-    opacity: 1;
-    right: 0;
+  opacity: 1;
+  right: 0;
 }
 
 button:hover {
-    background-color: red;
-    border: 2px solid grey;
+  background-color: red;
+  border: 2px solid grey;
 }
 
 button:active {
-    background-color: grey;
+  background-color: grey;
 }
 
 form div {
-    float: left;
-    margin-right: 20px;
+  float: left;
+  margin-right: 20px;
 }
 
 .login {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 &:valid {
-    border-style: auto;
-    border-color: inherit;
+  border-style: auto;
+  border-color: inherit;
+}
+
+@media (max-width: 600px) {
+  body {
+    display: block;
+  }
+
+  .background {
+    display: block;
+    width: 100%;
+    height: 500px;
+  }
+  .content {
+    padding: 1em;
+  }
+  .top-text {
+    font-size: 18px;
+  }
+  .form {
+    padding: 1em;
+    width: 100%;
+  }
+  legend {
+    font-size: 1.3em;
+  }
+  form input {
+    width: 17rem;
+  }
+  form div {
+    float: none;
+    margin: auto;
+  }
+  button {
+    width: 100%;
+  }
+  .login {
+    font-size: 18px;
+  }
+  .background {
+    width: 100%;
+  }
 }
